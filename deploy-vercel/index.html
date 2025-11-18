@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oferta Especial - Upsell</title>
+  <meta name="description" content="Aproveite esta oferta exclusiva agora!">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container {
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 2em;
+      margin-bottom: 20px;
+      line-height: 1.3;
+    }
+
+    .subtitle {
+      color: #666;
+      font-size: 1.1em;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .buttons-container {
+      margin-top: 30px;
+    }
+
+    /* Estilização dos botões Cakto */
+    cakto-upsell-accept::part(button) {
+      background-color: #0f7865;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 16px 32px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 15px;
+    }
+
+    cakto-upsell-accept::part(button):hover {
+      background-color: #0d6555;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(15, 120, 101, 0.4);
+    }
+
+    cakto-upsell-reject::part(button) {
+      background-color: transparent;
+      color: #666;
+      font-size: 14px;
+      border: none;
+      cursor: pointer;
+      text-decoration: underline;
+      padding: 10px;
+    }
+
+    cakto-upsell-reject::part(button):hover {
+      color: #999;
+    }
+
+    .icon {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 30px 20px;
+      }
+
+      h1 {
+        font-size: 1.5em;
+      }
+
+      .subtitle {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon">🎁</div>
+    <h1>Oferta Exclusiva Para Você!</h1>
+    <p class="subtitle">
+      Aproveite esta oportunidade única de maximizar seus resultados. 
+      Esta oferta está disponível apenas agora!
+    </p>
+    
+    <div class="buttons-container">
+      <cakto-upsell-buttons>
+        <cakto-upsell-accept
+          bg-color="#0f7865"
+          text-color="#ffffff"
+          upsell-accept-url="https://pay.cakto.com.br/h9a5nho"
+          offer-id="h9a5nho"
+          app-base-url="https://app.cakto.com.br"
+          offer-type="upsell"
+          upsell-reject-url="members_area"   
+        >
+          Sim, quero aproveitar a oferta
+        </cakto-upsell-accept>
+        
+        <cakto-upsell-reject
+          upsell-reject-url="members_area"       
+        >
+          Não, eu não quero aproveitar a oferta
+        </cakto-upsell-reject>
+      </cakto-upsell-buttons>
+    </div>
+  </div>
+
+  <!-- Script do Cakto -->
+  <script type="text/javascript" src="https://caktoscripts.nyc3.cdn.digitaloceanspaces.com/upsell.js"></script>
+</body>
+</html>
