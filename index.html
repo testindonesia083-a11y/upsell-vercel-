@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oferta Exclusiva - Super Kit de Atividades Bíblicas</title>
+  <meta name="description" content="Aproveite esta oferta única do Super Kit de Atividades Bíblicas por apenas R$ 19,90!">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: hsl(51, 100%, 86%);
+      color: hsl(0, 0%, 10%);
+      line-height: 1.6;
+    }
+
+    .font-secondary {
+      font-family: 'Nunito', sans-serif;
+    }
+
+    /* Urgency Banner */
+    .urgency-banner {
+      background-color: #E30300;
+      padding: 12px 16px;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .urgency-banner-content {
+      max-width: 896px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      text-align: center;
+    }
+
+    .urgency-banner-text {
+      color: white;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .urgency-icon {
+      color: white;
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+    }
+
+    /* Container */
+    .container {
+      max-width: 896px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    /* Thank You Section */
+    .thank-you-section {
+      padding: 32px 0;
+      text-align: center;
+    }
+
+    .gift-icon {
+      width: 48px;
+      height: 48px;
+      color: hsl(168, 76%, 28%);
+      margin: 0 auto 12px;
+    }
+
+    .thank-you-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: hsl(0, 0%, 10%);
+      margin-bottom: 8px;
+    }
+
+    .thank-you-subtitle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 18px;
+      font-weight: 600;
+      color: hsl(168, 76%, 28%);
+    }
+
+    .sparkle-icon {
+      width: 20px;
+      height: 20px;
+      color: hsl(168, 76%, 28%);
+    }
+
+    /* Progress Section */
+    .progress-section {
+      padding: 48px 0;
+      text-align: center;
+    }
+
+    .progress-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+
+    .alert-icon {
+      width: 32px;
+      height: 32px;
+      color: #FF9E40;
+      flex-shrink: 0;
+    }
+
+    .progress-title {
+      font-size: 32px;
+      font-weight: 700;
+      color: hsl(0, 0%, 10%);
+    }
+
+    .progress-description {
+      font-size: 18px;
+      color: hsl(0, 0%, 45%);
+      margin-bottom: 32px;
+    }
+
+    .progress-bar-container {
+      margin-bottom: 8px;
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 8px;
+      background-color: hsl(0, 0%, 89%);
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      width: 75%;
+      background: linear-gradient(90deg, #66BB6A 0%, #4FC3F7 100%);
+      border-radius: 999px;
+    }
+
+    .progress-label {
+      font-size: 14px;
+      color: hsl(0, 0%, 45%);
+      font-family: 'Nunito', sans-serif;
+    }
+
+    /* Main Upsell Section */
+    .main-upsell-section {
+      padding: 48px 0;
+    }
+
+    .card {
+      background: hsl(0, 0%, 98%);
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .product-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: hsl(0, 0%, 10%);
+      margin-bottom: 16px;
+    }
+
+    .product-description {
+      color: hsl(0, 0%, 45%);
+      margin-bottom: 24px;
+      font-family: 'Nunito', sans-serif;
+    }
+
+    .benefits-list {
+      margin-bottom: 24px;
+    }
+
+    .benefit-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .check-icon {
+      background-color: hsl(168, 76%, 28%);
+      border-radius: 999px;
+      padding: 4px;
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .check-icon svg {
+      width: 16px;
+      height: 16px;
+      color: white;
+    }
+
+    .pricing {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+
+    .price-old {
+      color: hsl(0, 0%, 45%);
+      text-decoration: line-through;
+      font-size: 18px;
+    }
+
+    .price-new {
+      font-size: 36px;
+      font-weight: 700;
+      color: hsl(168, 76%, 28%);
+    }
+
+    .price-label {
+      font-size: 14px;
+      color: hsl(0, 0%, 45%);
+    }
+
+    .security-badges {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      margin-top: 16px;
+      font-size: 14px;
+      color: hsl(0, 0%, 45%);
+      flex-wrap: wrap;
+    }
+
+    .security-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .security-badge svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .product-image {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    /* Social Proof Section */
+    .social-proof-section {
+      background-color: #0F7865;
+      padding: 48px 0;
+    }
+
+    .social-proof-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 32px;
+      flex-wrap: wrap;
+    }
+
+    .social-proof-title h2 {
+      font-size: 24px;
+      font-weight: 700;
+      color: white;
+      text-align: center;
+    }
+
+    .heart-icon {
+      width: 28px;
+      height: 28px;
+      color: #FF9E40;
+      fill: #FF9E40;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    .testimonial-card {
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .testimonial-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 999px;
+      background-color: #e5e5e5;
+      overflow: hidden;
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .testimonial-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: hsl(0, 0%, 10%);
+    }
+
+    .stars {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 12px;
+    }
+
+    .star-icon {
+      width: 20px;
+      height: 20px;
+      color: #FFB800;
+      fill: #FFB800;
+    }
+
+    .testimonial-text {
+      color: hsl(0, 0%, 10%);
+      font-style: italic;
+      font-family: 'Nunito', sans-serif;
+    }
+
+    /* Final CTA Section */
+    .final-cta-section {
+      padding: 64px 0;
+      text-align: center;
+    }
+
+    .final-cta-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: hsl(0, 0%, 10%);
+      margin-bottom: 32px;
+    }
+
+    .cta-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: center;
+    }
+
+    /* Cakto Buttons Styling */
+    cakto-upsell-accept::part(button) {
+      background-color: #0f7865;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 16px 32px;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      width: 100%;
+      max-width: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: 0 2px 8px rgba(15, 120, 101, 0.2);
+    }
+
+    cakto-upsell-accept::part(button):hover {
+      background-color: #0d6555;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(15, 120, 101, 0.3);
+    }
+
+    cakto-upsell-reject::part(button) {
+      background-color: transparent;
+      color: hsl(0, 0%, 45%);
+      font-size: 14px;
+      border: none;
+      cursor: pointer;
+      text-decoration: underline;
+      padding: 10px;
+    }
+
+    cakto-upsell-reject::part(button):hover {
+      color: hsl(0, 0%, 30%);
+    }
+
+    /* Responsive */
+    @media (min-width: 768px) {
+      .urgency-banner-text {
+        font-size: 16px;
+      }
+
+      .thank-you-title {
+        font-size: 32px;
+      }
+
+      .thank-you-subtitle {
+        font-size: 20px;
+      }
+
+      .progress-title {
+        font-size: 40px;
+      }
+
+      .card-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .product-title {
+        font-size: 28px;
+      }
+
+      .price-new {
+        font-size: 40px;
+      }
+
+      .testimonials-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .social-proof-title h2 {
+        font-size: 32px;
+      }
+
+      .final-cta-title {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Urgency Banner -->
+  <div class="urgency-banner">
+    <div class="urgency-banner-content">
+      <svg class="urgency-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+      </svg>
+      <p class="urgency-banner-text">
+        Essa é uma oferta única e não volta mais depois dessa página
+      </p>
+    </div>
+  </div>
+
+  <!-- Thank You Section -->
+  <div class="container">
+    <div class="thank-you-section">
+      <svg class="gift-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+      </svg>
+      <h1 class="thank-you-title">
+        Parabéns pela sua compra!
+      </h1>
+      <div class="thank-you-subtitle">
+        <svg class="sparkle-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+        </svg>
+        <h2>Seu Kit está a caminho</h2>
+        <svg class="sparkle-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Progress Section -->
+  <div class="container">
+    <div class="progress-section">
+      <div class="progress-header">
+        <svg class="alert-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+        </svg>
+        <h1 class="progress-title">
+          Oferta Exclusiva – Apenas Agora!
+        </h1>
+      </div>
+      <p class="progress-description">
+        Complete sua compra com um material imperdível que vai transformar ainda mais o aprendizado das crianças.
+      </p>
+      <div class="progress-bar-container">
+        <div class="progress-bar">
+          <div class="progress-bar-fill"></div>
+        </div>
+      </div>
+      <p class="progress-label">
+        Seu pedido está quase completo… Aproveite esta única oportunidade!
+      </p>
+    </div>
+  </div>
+
+  <!-- Main Upsell Section -->
+  <div class="container">
+    <div class="main-upsell-section">
+      <div class="card">
+        <div class="card-grid">
+          <div>
+            <h2 class="product-title">
+              Super Kit de Atividades Bíblicas – Aumente o Aprendizado das Crianças
+            </h2>
+            <p class="product-description">
+              O Super Kit de Atividades Bíblicas contém caça-palavras, ligue os pontos, desafios, desenhos e atividades que fixam cada parábola de forma prática e divertida. Ideal para casa, escola e igreja. Torne o aprendizado mais leve e envolvente!
+            </p>
+            
+            <div class="benefits-list">
+              <div class="benefit-item">
+                <div class="check-icon">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span>Atividades prontas para imprimir e usar</span>
+              </div>
+              <div class="benefit-item">
+                <div class="check-icon">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span>Aumenta o interesse e a participação das crianças</span>
+              </div>
+              <div class="benefit-item">
+                <div class="check-icon">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span>Fortalece o aprendizado das parábolas</span>
+              </div>
+              <div class="benefit-item">
+                <div class="check-icon">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span>Perfeito para pais, professores e ministério infantil</span>
+              </div>
+            </div>
+
+            <div class="pricing">
+              <span class="price-old">De R$ 39,90</span>
+              <span class="price-new">R$ 19,90</span>
+              <span class="price-label">apenas aqui</span>
+            </div>
+
+            <cakto-upsell-buttons>
+              <cakto-upsell-accept
+                bg-color="#0f7865"
+                text-color="#ffffff"
+                upsell-accept-url="https://pay.cakto.com.br/ipgbosc"
+                offer-id="ipgbosc"
+                app-base-url="https://app.cakto.com.br"
+                offer-type="upsell"
+                upsell-reject-url="members_area"
+              >
+                <svg style="width: 20px; height: 20px; display: inline-block; vertical-align: middle; margin-right: 8px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                SIM! Quero adicionar ao meu pedido agora
+              </cakto-upsell-accept>
+            </cakto-upsell-buttons>
+
+            <div class="security-badges">
+              <div class="security-badge">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+                <span>Garantia incondicional de 7 dias</span>
+              </div>
+              <div class="security-badge">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+                <span>Download imediato</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <img 
+              src="images/super-kit.png" 
+              alt="Super Kit de Atividades Bíblicas"
+              class="product-image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Social Proof Section -->
+  <div class="social-proof-section">
+    <div class="container">
+      <div class="social-proof-title">
+        <h2>Quem já comprou está amando</h2>
+        <svg class="heart-icon" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+      </div>
+      
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="avatar">
+              <img src="images/testemunho1.jpg" alt="Ana Paula">
+            </div>
+            <p class="testimonial-name">Ana Paula</p>
+          </div>
+          <div class="stars">
+            <svg class="star-icon" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+            </svg>
+            <svg class="star-icon" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+            </svg>
+            <svg class="star-icon" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+            </svg>
+            <svg class="star-icon" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+            </svg>
+            <svg class="star-icon" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+            </svg>
+          </div>
+          <p class="testimonial-text">
+            "Me ajudou muito nas aulas do culto infantil!"
+          </p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="avatar">
+              <img src="images/testemunho2.jpg" alt="Carlos Silva">
+            </div>
+            <p class="testimonial-name">Carlos Silva</p>
+          </div>
+          <div class="stars">
+            <svg class="star-icon" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+            </svg>
+            <svg class="star-icon" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+            </svg>
+            <svg class="star-icon" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+            </svg>
+            <svg class="star-icon" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+            </svg>
+            <svg class="star-icon" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+            </svg>
+          </div>
+          <p class="testimonial-text">
+            "Minhas crianças pedem todos os dias para fazer!"
+          </p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="avatar">
+              <img src="images/testemunho3.jpg" alt="Maria Santos">
+            </div>
+            <p class="testimonial-name">Maria Santos</p>
+          </div>
+          <div class="stars">
+            <svg class="star-icon" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+            </svg>
+            <svg class="star-icon" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+            </svg>
+            <svg class="star-icon" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+            </svg>
+            <svg class="star-icon" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+            </svg>
+            <svg class="star-icon" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+            </svg>
+          </div>
+          <p class="testimonial-text">
+            "Material de qualidade, muito didático e divertido!"
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Final CTA Section -->
+  <div class="container">
+    <div class="final-cta-section">
+      <h2 class="final-cta-title">
+        Última chance antes de finalizar o seu pedido
+      </h2>
+
+      <div class="cta-buttons">
+        <cakto-upsell-buttons>
+          <cakto-upsell-accept
+            bg-color="#0f7865"
+            text-color="#ffffff"
+            upsell-accept-url="https://pay.cakto.com.br/ipgbosc"
+            offer-id="ipgbosc"
+            app-base-url="https://app.cakto.com.br"
+            offer-type="upsell"
+            upsell-reject-url="members_area"
+          >
+            <svg style="width: 20px; height: 20px; display: inline-block; vertical-align: middle; margin-right: 8px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+            SIM! Quero adicionar ao meu pedido agora
+          </cakto-upsell-accept>
+
+          <cakto-upsell-reject
+            upsell-reject-url="members_area"
+          >
+            Não, obrigado. Quero finalizar minha compra sem adicionar este material.
+          </cakto-upsell-reject>
+        </cakto-upsell-buttons>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script do Cakto -->
+  <script type="text/javascript" src="https://caktoscripts.nyc3.cdn.digitaloceanspaces.com/upsell.js"></script>
+</body>
+</html>
